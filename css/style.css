@@ -1,0 +1,145 @@
+/* Reset and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and base layout */
+body {
+  font-family: cursive, sans-serif;
+  line-height: 1.6;
+  background-color: #dee9f2;
+  color: #101010;
+  padding: 0.5%;
+}
+
+/* Header */
+header {
+  background-color: #9fdcec;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+header img {
+  display: inline-block;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+  width: 20%;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #02376c;
+}
+
+/* Navigation bar */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+nav img {
+  width: 10%;
+}
+
+/* Navigation menu */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #004080;
+  color: white;
+}
+
+/* Main section */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Images inside grid */
+.grid img {
+  width: 100%;
+}
+
+/* General images in main */
+main img {
+  margin: 5px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.1);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: #004080;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.skip-link:focus {
+  transform: scale(1.1);
+  background: #002345;
+}
+
+/* Content links (outside nav) */
+main a:hover,
+footer a:hover {
+  color: #dd0720;
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #2b2a2a;
+}
